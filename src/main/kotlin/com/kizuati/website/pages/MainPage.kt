@@ -92,6 +92,7 @@ object MainPage : Page() {
                 
                 .split.footer {
                     margin-top: 60px;
+                    margin-bottom: 20px;
                 }
                 
                 .grid {
