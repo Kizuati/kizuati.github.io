@@ -7,7 +7,22 @@ object CommonStyle : StyleSheet() {
 
     override fun getMain(): String {
         return """
+            html {
+                background-color: #0c0c0d;
+            }
             
+            body {
+                color: #FFFFFF;
+                font-family: 'Rubik', sans-serif;
+            }
+            
+            a {
+                color: #83cbfc;
+            }
+            
+            .split {
+                display: flex;
+            }
         """.trimIndent()
     }
 
@@ -16,6 +31,9 @@ object CommonStyle : StyleSheet() {
     """.trimIndent()
 
     override fun getMobile() = """
-        
+        .split {
+            flex-direction: column;
+            align-items: center;
+        }
     """.trimIndent()
 }

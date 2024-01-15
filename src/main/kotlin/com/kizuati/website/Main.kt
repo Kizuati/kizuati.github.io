@@ -29,6 +29,7 @@ fun main(args: Array<String>) {
         "meta/robots.txt" to "robots.txt",
         "meta/favicon.ico" to "favicon.ico",
         "meta/site_image.png" to "site_image.png",
+        "images/pfp.png" to "images/pfp.png"
     )
 
     val root = Path("web_output/").absolute()
@@ -99,7 +100,13 @@ fun main(args: Array<String>) {
                 link("/favicon.ico", "icon", "image/x-icon")
 
                 // Fonts
-                // TODO
+                link("https://fonts.googleapis.com", "preconnect")
+                link("https://fonts.gstatic.com", "preconnect") {
+                    attributes["crossorigin"] = ""
+                }
+                link("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap") {
+                    attributes["as"] = "style"
+                }
 
                 // CSS
                 it.styleSheets().forEach {

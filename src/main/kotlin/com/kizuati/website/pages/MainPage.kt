@@ -2,7 +2,12 @@ package com.kizuati.website.pages
 
 import com.kizuati.website.Page
 import com.kizuati.website.StyleSheet
-import kotlinx.html.BODY
+import com.kizuati.website.components.Justify
+import com.kizuati.website.components.br2
+import com.kizuati.website.components.email
+import com.kizuati.website.components.split
+import com.kizuati.website.util.px
+import kotlinx.html.*
 
 object MainPage : Page() {
     override val title = "Kizu's Landing Page"
@@ -13,7 +18,36 @@ object MainPage : Page() {
     }
 
     override fun BODY.body() {
+        split(
+            Justify.CENTER,
+            { img("Kizu's profile picture", "images/pfp.png") {
+                id = "profile_picture"
+                width = 400.px
+                height = 400.px
+            }},
+            {
+                id = "bio"
+                article {
+                    h1 { +"Hi,I'm Kizu" }
+                    h2 { +"Professionally unprofessional game designer and video editor." }
+                    +"I make deviously peculiar videos on game design. Sometimes I edit them, sometimes I edit videos for other people. You won't find a match for the silliness I have within me."
+                    br2
+                    +"If you want your videos edited,I'm a good choice. No bias :)"
+                }
+            },
+            "heading"
+        )
 
+        split(
+            Justify.CENTER,
+            {id = "footer-name"; +"Kizu"; br; +"Axiosov" },
+            {id = "footer-email"
+                +"Contact me?"
+                br2
+                email("sponsor@kizuati.com")
+            },
+            "footer"
+        )
     }
 
     object Style : StyleSheet() {
@@ -21,16 +55,76 @@ object MainPage : Page() {
 
         override fun getMain(): String {
             return """
+                body {
+                    margin: 0px 0px 0px 0px;
+                }
                 
+                h1 {
+                    font-size: 60px;
+                    margin-bottom: 0px;
+                }
+                
+                .split.heading {
+                    background-color: #19191e;
+                    padding-bottom: 40px;
+                }
+                
+                .split.footer {
+                    margin-top: 60px;
+                }
+                
+                #footer-name {
+                    text-align: center;
+                    font-size: 30px;
+                    margin-right: 20px;
+                }
+                
+                #footer-email {
+                    text-align: center;
+                    font-size: 20px;
+                }
+                
+                #profile_picture {
+                    margin: 10px 30px 10px 10px;
+
+                    max-width: 100%;
+                    height: auto;
+                }
+                
+                #bio {
+                    font-size: 22px;
+                    line-height: 1.3;
+                    width: 40%;
+
+                    display: flex;
+                    align-items: center;
+                }
             """.trimIndent()
         }
 
         override fun getSmall() = """
+            #profile_picture {
+                width: 200px;
+            }
             
+            #bio {
+                width: 70%;
+            }
+            
+            .split.footer {
+                margin-bottom: 40px;
+            }
         """.trimIndent()
 
         override fun getMobile() = """
+            .split.footer {
+                margin-top: 20px;
+            }
             
+            #footer-name {
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
         """.trimIndent()
     }
 }
