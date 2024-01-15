@@ -38,6 +38,27 @@ object MainPage : Page() {
             "heading"
         )
 
+        val youtubeVideoIDs = listOf(
+            "813i4VpXrP4",
+            "oSpeS38_xtA"
+        )
+
+        div("grid") {
+            youtubeVideoIDs.forEach {
+                div("grid-item") {
+                    iframe {
+                        width = "480"
+                        height = "270"
+                        title = "YouTube video player"
+                        src = "https://www.youtube-nocookie.com/embed/${it}"
+                        attributes["frameborder"] = "0"
+                        attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        attributes["allowfullscreen"] = "1"
+                    }
+                }
+            }
+        }
+
         split(
             Justify.CENTER,
             {id = "footer-name"; +"Kizu"; br; +"Axiosov" },
@@ -71,6 +92,11 @@ object MainPage : Page() {
                 
                 .split.footer {
                     margin-top: 60px;
+                }
+                
+                .grid {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
                 }
                 
                 #footer-name {

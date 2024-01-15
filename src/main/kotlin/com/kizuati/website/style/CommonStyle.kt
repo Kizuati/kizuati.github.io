@@ -23,6 +23,18 @@ object CommonStyle : StyleSheet() {
             .split {
                 display: flex;
             }
+            
+            .grid {
+              display: grid;
+              gap: 1rem;
+              grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+            }
+            
+            .grid-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         """.trimIndent()
     }
 
