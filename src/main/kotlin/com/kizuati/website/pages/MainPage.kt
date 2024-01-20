@@ -10,7 +10,7 @@ import com.kizuati.website.util.px
 import kotlinx.html.*
 
 object MainPage : Page() {
-    override val title = "Kizu's Page"
+    override val title = "Kizu's Landing Page"
     override val path = "index"
 
     override fun additionalStyleSheets(): List<StyleSheet> {

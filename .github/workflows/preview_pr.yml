@@ -32,5 +32,5 @@ jobs:
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          preview-branch: master
+          preview-branch: wip
           source-dir: ./web_output
