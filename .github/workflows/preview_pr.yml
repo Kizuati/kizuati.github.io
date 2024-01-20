@@ -33,5 +33,5 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           custom-url: kizuati.com
-          preview-branch: wip
+          preview-branch: master
           source-dir: ./web_output
