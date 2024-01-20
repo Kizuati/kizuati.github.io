@@ -46,14 +46,19 @@ object MainPage : Page() {
         div("grid") {
             youtubeVideoIDs.forEach {
                 div("grid-item") {
-                    iframe {
-                        width = "480"
-                        height = "270"
-                        title = "YouTube video player"
-                        src = "https://www.youtube-nocookie.com/embed/${it}"
-                        attributes["frameborder"] = "0"
-                        attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
-                        attributes["allowfullscreen"] = "1"
+                    div("stack") {
+                        iframe {
+                            width = "480"
+                            height = "270"
+                            title = "YouTube video player"
+                            src = "https://www.youtube-nocookie.com/embed/${it}"
+                            attributes["frameborder"] = "0"
+                            attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            attributes["allowfullscreen"] = "1"
+                        }
+                        div("video-desc") {
+                            +"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        }
                     }
                 }
             }
@@ -98,6 +103,15 @@ object MainPage : Page() {
                 .grid {
                     margin-top: 20px;
                     margin-bottom: 20px;
+                }
+                
+                .stack {
+                    display: grid;
+                }
+                
+                .video-desc {
+                    margin-top: 10px;
+                    width: 480px;
                 }
                 
                 #footer-name {
