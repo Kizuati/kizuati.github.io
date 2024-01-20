@@ -32,5 +32,6 @@ jobs:
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
+          custom-url: kizuati.com
           preview-branch: wip
           source-dir: ./web_output
