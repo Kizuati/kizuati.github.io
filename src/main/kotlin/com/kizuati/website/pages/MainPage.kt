@@ -39,8 +39,10 @@ object MainPage : Page() {
         )
 
         val youtubeVideoIDs = mapOf(
+            // Best of Helios || July
             "yyc-o4DJHic" to "Description A",
-            "oSpeS38_xtA" to "Description B"
+            // How BHVR Failed To Fix Their Most Hated Killer
+            "64pIEmr8ev0" to "Description B"
         )
 
         div("grid") {
