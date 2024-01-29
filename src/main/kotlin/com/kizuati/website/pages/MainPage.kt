@@ -39,8 +39,8 @@ object MainPage : Page() {
         )
 
         val youtubeVideoIDs = listOf(
-            "64pIEmr8ev0",
-            "oSpeS38_xtA"
+            "yyc-o4DJHic",
+            "64pIEmr8ev0"
         )
 
         div("grid") {
