@@ -1,1 +1,1 @@
-All the silly-goofy-ah-ah stuff that makes kizuati.com work behind the scenes.
+All the code behind making my portfolio site kizuati.com function with all the bells bonging and binging and the whistles whistling.

@@ -37,23 +37,31 @@ object MainPage : Page() {
             },
             "heading"
         )
-
-        val youtubeVideoIDs = listOf(
-            "yyc-o4DJHic",
-            "64pIEmr8ev0"
+        
+        val youtubeVideoIDs = mapOf(
+            // Best of Helios || July
+            "yyc-o4DJHic" to "This is an example of some simple stream highlights I can do. Sound effects,music,pacing all it the discretion of the client and content provided.",
+            // How BHVR Failed To Fix Their Most Hated Killer
+            "64pIEmr8ev0" to "I also do more general,podcast-esque videos too,with a more streamlined editing process,but they are slowly growing in different visual features as I expand my template collection."
         )
 
         div("grid") {
-            youtubeVideoIDs.forEach {
+            youtubeVideoIDs.forEach { id, desc ->
                 div("grid-item") {
-                    iframe {
-                        width = "480"
-                        height = "270"
-                        title = "YouTube video player"
-                        src = "https://www.youtube-nocookie.com/embed/${it}"
-                        attributes["frameborder"] = "0"
-                        attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
-                        attributes["allowfullscreen"] = "1"
+                    div("stack") {
+                        iframe {
+                            width = "480"
+                            height = "270"
+                            title = "YouTube video player"
+                            src = "https://www.youtube-nocookie.com/embed/${id}"
+                            attributes["frameborder"] = "0"
+                            attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            attributes["allowfullscreen"] = "1"
+                        }
+                        div("video-desc") {
+                            +desc
+						
+                        }
                     }
                 }
             }
@@ -98,6 +106,15 @@ object MainPage : Page() {
                 .grid {
                     margin-top: 20px;
                     margin-bottom: 20px;
+                }
+                
+                .stack {
+                    display: grid;
+                }
+                
+                .video-desc {
+                    margin-top: 10px;
+                    width: 480px;
                 }
                 
                 #footer-name {
