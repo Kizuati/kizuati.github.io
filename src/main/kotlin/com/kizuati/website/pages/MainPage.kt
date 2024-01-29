@@ -38,26 +38,26 @@ object MainPage : Page() {
             "heading"
         )
 
-        val youtubeVideoIDs = listOf(
-            "yyc-o4DJHic",
-            "oSpeS38_xtA"
+        val youtubeVideoIDs = mapOf(
+            "yyc-o4DJHic" to "Description A",
+            "oSpeS38_xtA" to "Description B"
         )
 
         div("grid") {
-            youtubeVideoIDs.forEach {
+            youtubeVideoIDs.forEach { id, desc ->
                 div("grid-item") {
                     div("stack") {
                         iframe {
                             width = "480"
                             height = "270"
                             title = "YouTube video player"
-                            src = "https://www.youtube-nocookie.com/embed/${it}"
+                            src = "https://www.youtube-nocookie.com/embed/${id}"
                             attributes["frameborder"] = "0"
                             attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
                             attributes["allowfullscreen"] = "1"
                         }
                         div("video-desc") {
-                            +"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                            +desc
                         }
                     }
                 }
