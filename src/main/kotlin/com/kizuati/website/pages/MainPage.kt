@@ -57,6 +57,7 @@ object MainPage : Page() {
                             attributes["frameborder"] = "0"
                             attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
                             attributes["allowfullscreen"] = "1"
+                            attributes["class"] = "embed"
                         }
                         div("video-desc") {
                             +desc
@@ -106,6 +107,23 @@ object MainPage : Page() {
                 .grid {
                     margin-top: 20px;
                     margin-bottom: 20px;
+                }
+                
+                .embed {
+                    animation-duration: 3s;
+                    animation-name: slidein;
+                }
+
+                @keyframes slidein {
+                  from {
+                    margin-left: 100%;
+                    width: 300%;
+                  }
+
+                  to {
+                    margin-left: 0%;
+                    width: 100%;
+                  }
                 }
                 
                 .stack {
