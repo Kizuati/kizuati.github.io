@@ -39,7 +39,7 @@ object MainPage : Page() {
         )
 
         val youtubeVideoIDs = listOf(
-            "yyc-o4DJHic",
+            "64pIEmr8ev0",
             "oSpeS38_xtA"
         )
 
