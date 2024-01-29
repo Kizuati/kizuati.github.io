@@ -40,9 +40,9 @@ object MainPage : Page() {
 
         val youtubeVideoIDs = mapOf(
             // Best of Helios || July
-            "yyc-o4DJHic" to "Description A",
+            "yyc-o4DJHic" to "This is an example of some simple stream highlights I can do. Sound effects,music,pacing all it the discretion of the client and content provided.",
             // How BHVR Failed To Fix Their Most Hated Killer
-            "64pIEmr8ev0" to "Description B"
+            "64pIEmr8ev0" to "I also do more general,podcast-esque videos too,with a more streamlined editing process,but they are slowly growing in different visual features as I expand my template collection."
         )
 
         div("grid") {
@@ -60,6 +60,7 @@ object MainPage : Page() {
                         }
                         div("video-desc") {
                             +desc
+						
                         }
                     }
                 }
