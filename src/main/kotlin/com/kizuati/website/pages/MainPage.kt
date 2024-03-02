@@ -39,10 +39,10 @@ object MainPage : Page() {
         )
         
         val youtubeVideoIDs = mapOf(
-            // Best of Helios || July
-            "yyc-o4DJHic" to "This is an example of some simple stream highlights I can do. Sound effects,music,pacing - all is at the discretion of the client and content provided.",
-            // How BHVR Failed To Fix Their Most Hated Killer
-            "64pIEmr8ev0" to "I also do more general,podcast-esque videos too,with a more streamlined editing process,but they are slowly growing in different visual features as I expand my template collection."
+            // Best of Helios || Returning To Billy
+            "Ok6Olkck8oQ" to "This is an example of some simple stream highlights I can do. Sound effects,music,pacing all it the discretion of the client and content provided.",
+            // The Unknown PTB Review
+            "DO85Zo8C08A" to "I also do more general,podcast-esque videos too,with pretty graphics that talk about game design."
         )
 
         div("grid") {
@@ -57,6 +57,7 @@ object MainPage : Page() {
                             attributes["frameborder"] = "0"
                             attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
                             attributes["allowfullscreen"] = "1"
+                            attributes["class"] = "embed"
                         }
                         div("video-desc") {
                             +desc
@@ -106,6 +107,23 @@ object MainPage : Page() {
                 .grid {
                     margin-top: 20px;
                     margin-bottom: 20px;
+                }
+                
+                .embed {
+                    animation-duration: 3s;
+                    animation-name: slidein;
+                }
+
+                @keyframes slidein {
+                  from {
+                    margin-left: 100%;
+                    width: 300%;
+                  }
+
+                  to {
+                    margin-left: 0%;
+                    width: 100%;
+                  }
                 }
                 
                 .stack {
