@@ -41,8 +41,8 @@ object MainPage : Page() {
         val youtubeVideoIDs = mapOf(
             // Best of Helios || Returning To Billy
             "VhLVh5mauu4" to "This is an example of some simple stream highlights I can do. Sound effects,music,pacing all it the discretion of the client and content provided.",
-            // The Unknown PTB Review
-            "DO85Zo8C08A" to "I also do more general,podcast-esque videos too,with pretty graphics that talk about game design."
+            // All Things Wicked Midchapter PTB Reviewed
+            "vODzL3-dpzo" to "I also do comprehensive,edited examinations of game updates,specifically from a game design standpoint."
         )
 
         div("grid") {
