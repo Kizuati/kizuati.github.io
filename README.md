@@ -1,1 +1,1 @@
-All the code behind making my portfolio site kizuati.com function with all the bells bonging and binging and the whistles whistling.
+All the code behind making my portfolio site kizuati.com function with all the bells bonging and binging and the whistles whistling. Or something like that.
