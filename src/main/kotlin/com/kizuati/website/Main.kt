@@ -30,7 +30,11 @@ fun main(args: Array<String>) {
         "meta/favicon.ico" to "favicon.ico",
         "meta/site_image.png" to "site_image.png",
         "images/pfp.png" to "images/pfp.png",
-        "redirects/discord.html" to "discord.html"
+        "redirects/discord.html" to "discord.html",
+        "redirects/bsky.html" to "bsky.html",
+        "redirects/twitch.html" to "twitch.html",
+        "redirects/twitter.html" to "twitter.html",
+        "redirects/youtube.html" to "youtube.html"
     )
 
     val root = Path("web_output/").absolute()
