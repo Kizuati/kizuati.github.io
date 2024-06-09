@@ -29,7 +29,8 @@ fun main(args: Array<String>) {
         "meta/robots.txt" to "robots.txt",
         "meta/favicon.ico" to "favicon.ico",
         "meta/site_image.png" to "site_image.png",
-        "images/pfp.png" to "images/pfp.png"
+        "images/pfp.png" to "images/pfp.png",
+        "redirects/discord.html" to "discord.html"
     )
 
     val root = Path("web_output/").absolute()

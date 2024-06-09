@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
 plugins {
     java
     application
-    kotlin("jvm") version "1.9.0"
+    kotlin("jvm") version "1.9.20"
 }
 
 project.archivesName.set("website_gen")
