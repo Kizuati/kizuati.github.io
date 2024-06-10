@@ -42,7 +42,7 @@ object MainPage : Page() {
             // Best of Helios || Returning To Billy
             "VhLVh5mauu4" to "This is an example of some simple stream highlights I can do. Sound effects,music,pacing all it the discretion of the client and content provided.",
             // Dungeons & Dragons PTB Review
-            "Ivon9mr6XNE" to "I also do comprehensive,edited examinations of game updates,specifically from a game design standpoint."
+            "Ivon9mr6XNE" to "I also do comprehensive,edited examinations of game updates,specifically from a game design point of view."
         )
 
         div("grid") {
