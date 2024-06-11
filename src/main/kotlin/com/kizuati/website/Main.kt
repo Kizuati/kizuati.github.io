@@ -2,6 +2,7 @@ package com.kizuati.website
 
 import com.kizuati.website.components.metaProperty
 import com.kizuati.website.pages.MainPage
+import com.kizuati.website.pages.SocialPage
 import com.kizuati.website.style.CommonStyle
 import kotlinx.html.*
 import kotlinx.html.stream.createHTML
@@ -18,11 +19,13 @@ fun main(args: Array<String>) {
     val allStyleSheets = arrayOf(
         CommonStyle,
         MainPage.Style,
+        SocialPage.Style,
     )
 
     val pages = arrayOf(
         // Main Pages
         MainPage,
+        SocialPage,
     )
 
     val resources = mapOf(
