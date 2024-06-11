@@ -40,7 +40,7 @@ object MainPage : Page() {
         
         val youtubeVideoIDs = mapOf(
             // Best of Helios || Returning To Billy
-            "VhLVh5mauu4" to "These are stream highlights I've done recently. Pacing,SFX,Music,etc. - at client's discretion.",
+            "VhLVh5mauu4" to "These are some of the stream highlights I've done recently. Pacing,SFX,Music,etc. - all at the client's discretion.",
             // Dungeons & Dragons PTB Review
             "Ivon9mr6XNE" to "There's also a lot of game design focused deep dive videos made by me on DBD that have pretty graphics to accompany my points."
         )
