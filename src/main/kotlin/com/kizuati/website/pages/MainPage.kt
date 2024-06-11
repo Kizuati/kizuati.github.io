@@ -29,10 +29,10 @@ object MainPage : Page() {
                 id = "bio"
                 article {
                     h1 { +"Hi,I'm Kizu" }
-                    h2 { +"Professionally unprofessional game designer and video editor." }
-                    +"I make deviously peculiar videos on game design. Sometimes I edit them, sometimes I edit videos for other people. You won't find a match for the silliness I have within me."
+                    h2 { +"I edit videos and like to waffle about game design." }
+                    +"Those videos range from game design deep dives to stream highlights with anything in between."
                     br2
-                    +"If you want your videos edited,I'm a good choice. No bias :)"
+                    +"If you want your videos edited - hit me up,we'll work something out :)"
                 }
             },
             "heading"
@@ -40,9 +40,9 @@ object MainPage : Page() {
         
         val youtubeVideoIDs = mapOf(
             // Best of Helios || Returning To Billy
-            "VhLVh5mauu4" to "This is an example of some simple stream highlights I can do. Sound effects,music,pacing all it the discretion of the client and content provided.",
+            "VhLVh5mauu4" to "These are stream highlights I've done recently. Pacing,SFX,Music,etc. - at client's discretion.",
             // Dungeons & Dragons PTB Review
-            "Ivon9mr6XNE" to "I also do comprehensive,edited examinations of game updates,specifically from a game design point of view."
+            "Ivon9mr6XNE" to "There's also a lot of game design focused deep dive videos made by me on DBD that have pretty graphics to accompany my points."
         )
 
         div("grid") {
