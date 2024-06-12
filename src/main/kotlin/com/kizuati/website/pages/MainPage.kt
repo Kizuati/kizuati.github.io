@@ -48,13 +48,21 @@ object MainPage : Page() {
             }
 
             div("contact") {
-                split(Justify.CENTER, "footer") {
-                    div { id = "footer-name"; +"Kizu"; br; +"Axiosov" }
-                    div {
-                        id = "footer-email"
-                        +"Want to commission me?"
-                        br2
-                        email("commissions@kizuati.com")
+                stack(Justify.SPACE_EVENLY) {
+                    split(Justify.CENTER, "footer") {
+                        div { id = "footer-name"; +"Kizu"; br; +"Axiosov" }
+                        div {
+                            id = "footer-email"
+                            +"Want to commission me?"
+                            br2
+                            email("commissions@kizuati.com")
+                        }
+                    }
+                    a("/info", classes = "nav") {
+                        button { +"Commission Info" }
+                    }
+                    a("/social", classes = "nav") {
+                        button { +"Socials" }
                     }
                 }
             }
@@ -174,6 +182,23 @@ object MainPage : Page() {
 
                     display: flex;
                     align-items: center;
+                }
+                
+                button {
+                    border: none;
+                    border-radius: 10px;
+                    padding: 5px;
+                    text-align: center;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 6px 4px;
+                    width: 12em;
+                    background-color: #2f2f33;
+                    color: #FFFFFF;
+                }
+                
+                a.nav {
+                    align-self: center;
                 }
             """.trimIndent()
         }
