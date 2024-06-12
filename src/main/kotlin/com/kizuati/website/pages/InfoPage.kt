@@ -97,6 +97,14 @@ object InfoPage : Page() {
                 .buffer {
                     padding-right: 4em;
                 }
+                
+                #bio {
+                    display: flex;
+                }
+                
+                article {
+                    align-self: center;
+                }
             """.trimIndent()
         }
     }
