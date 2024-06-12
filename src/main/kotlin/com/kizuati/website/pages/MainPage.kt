@@ -2,10 +2,7 @@ package com.kizuati.website.pages
 
 import com.kizuati.website.Page
 import com.kizuati.website.StyleSheet
-import com.kizuati.website.components.Justify
-import com.kizuati.website.components.br2
-import com.kizuati.website.components.email
-import com.kizuati.website.components.split
+import com.kizuati.website.components.*
 import com.kizuati.website.util.px
 import kotlinx.html.*
 
@@ -37,47 +34,68 @@ object MainPage : Page() {
             },
             "heading"
         )
-        
-        val youtubeVideoIDs = mapOf(
-            // Best of Helios || Returning To Billy
-            "VhLVh5mauu4" to "These are some of the stream highlights I've done recently. Pacing,SFX,Music,etc. - all at the client's discretion.",
-            // Dungeons & Dragons PTB Review
-            "Ivon9mr6XNE" to "There's also a lot of game design focused deep dive videos made by me on DBD that have pretty graphics to accompany my points."
-        )
 
-        div("grid") {
-            youtubeVideoIDs.forEach { id, desc ->
-                div("grid-item") {
-                    div("stack") {
-                        iframe {
-                            width = "480"
-                            height = "270"
-                            title = "YouTube video player"
-                            src = "https://www.youtube-nocookie.com/embed/${id}"
-                            attributes["frameborder"] = "0"
-                            attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
-                            attributes["allowfullscreen"] = "1"
-                            attributes["class"] = "embed"
-                        }
-                        div("video-desc") {
-                            +desc
-						
-                        }
-                    }
-                }
+        div("split content") {
+            style = "justify-content: ${Justify.SPACE_EVENLY.css}"
+
+            // Best of Helios || Returning To Billy
+            // Best of Helios || July
+            div {
+                videos(
+                    "VhLVh5mauu4",
+                    "yyc-o4DJHic",
+                    "These are some of the stream highlights I've done recently. Pacing,SFX,Music,etc. - all at the client's discretion."
+                )
+            }
+
+            div("contact") {
+                split(
+                    Justify.CENTER,
+                    { id = "footer-name"; +"Kizu"; br; +"Axiosov" },
+                    {
+                        id = "footer-email"
+                        +"Contact me?"
+                        br
+                        _a("/social", "Socials")
+                        br
+                        email("sponsor@kizuati.com")
+                    },
+                    "footer"
+                )
+            }
+
+            // Dungeons & Dragons PTB Review
+            // 7.7.0 PTB Review
+            div { videos("Ivon9mr6XNE", "vODzL3-dpzo", "There's also a lot of game design focused deep dive videos made by me on DBD that have pretty graphics to accompany my points.") }
+        }
+    }
+
+    fun DIV.videos(idA: String, idB: String, desc: String) {
+        div("stack") {
+            iframe {
+                width = "480"
+                height = "270"
+                title = "YouTube video player"
+                src = "https://www.youtube-nocookie.com/embed/${idA}"
+                attributes["frameborder"] = "0"
+                attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
+                attributes["allowfullscreen"] = "1"
+                attributes["class"] = "embed"
+            }
+            div("video-desc") {
+                +desc
+            }
+            iframe {
+                width = "480"
+                height = "270"
+                title = "YouTube video player"
+                src = "https://www.youtube-nocookie.com/embed/${idB}"
+                attributes["frameborder"] = "0"
+                attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
+                attributes["allowfullscreen"] = "1"
+                attributes["class"] = "embed"
             }
         }
-
-        split(
-            Justify.CENTER,
-            {id = "footer-name"; +"Kizu"; br; +"Axiosov" },
-            {id = "footer-email"
-                +"Contact me?"
-                br2
-                email("sponsor@kizuati.com")
-            },
-            "footer"
-        )
     }
 
     object Style : StyleSheet() {
@@ -99,14 +117,18 @@ object MainPage : Page() {
                     padding-bottom: 40px;
                 }
                 
+                .contact {
+                    display: flex;
+                }
+                
                 .split.footer {
                     margin-top: 60px;
                     margin-bottom: 20px;
                 }
                 
-                .grid {
+                .content {
                     margin-top: 20px;
-                    margin-bottom: 20px;
+                    margin-bottom: 85px;
                 }
                 
                 .embed {
@@ -127,8 +149,10 @@ object MainPage : Page() {
                 }
                 
                 .stack {
-                    display: grid;
-                }
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                 }
                 
                 .video-desc {
                     margin-top: 10px;
