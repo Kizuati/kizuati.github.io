@@ -54,11 +54,11 @@ object MainPage : Page() {
                     { id = "footer-name"; +"Kizu"; br; +"Axiosov" },
                     {
                         id = "footer-email"
-                        +"Contact me?"
+                        +"Want to commission me?"
                         br
                         _a("/social", "Socials")
                         br
-                        email("sponsor@kizuati.com")
+                        email("commissions@kizuati.com")
                     },
                     "footer"
                 )
