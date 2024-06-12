@@ -5,11 +5,10 @@ import kotlinx.html.FlowContent
 import kotlinx.html.div
 import kotlinx.html.style
 
-inline fun FlowContent.split(justify: Justify, crossinline leftSide: DIV.() -> Unit, crossinline rightSide: DIV.() -> Unit, vararg extraClasses: String) {
+fun FlowContent.split(justify: Justify, vararg extraClasses: String, builder: DIV.() -> Unit) {
     div(listOf("split", *extraClasses).joinToString(separator = " ")) {
         style = "justify-content: ${justify.css}"
-        div { leftSide() }
-        div { rightSide() }
+        builder()
     }
 }
 

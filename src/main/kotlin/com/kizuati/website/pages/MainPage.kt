@@ -15,14 +15,13 @@ object MainPage : Page() {
     }
 
     override fun BODY.body() {
-        split(
-            Justify.CENTER,
-            { img("Kizu's profile picture", "images/pfp.png") {
+        split(Justify.CENTER, "heading") {
+            img("Kizu's profile picture", "images/pfp.png") {
                 id = "profile_picture"
                 width = 400.px
                 height = 400.px
-            }},
-            {
+            }
+            div {
                 id = "bio"
                 article {
                     h1 { +"Hi,I'm Kizu" }
@@ -31,9 +30,9 @@ object MainPage : Page() {
                     br2
                     +"If you want your videos edited - hit me up,we'll work something out :)"
                 }
-            },
-            "heading"
-        )
+            }
+        }
+
 
         div("split content") {
             style = "justify-content: ${Justify.SPACE_EVENLY.css}"
@@ -49,19 +48,15 @@ object MainPage : Page() {
             }
 
             div("contact") {
-                split(
-                    Justify.CENTER,
-                    { id = "footer-name"; +"Kizu"; br; +"Axiosov" },
-                    {
+                split(Justify.CENTER, "footer") {
+                    div { id = "footer-name"; +"Kizu"; br; +"Axiosov" }
+                    div {
                         id = "footer-email"
                         +"Want to commission me?"
-                        br
-                        _a("/social", "Socials")
-                        br
+                        br2
                         email("commissions@kizuati.com")
-                    },
-                    "footer"
-                )
+                    }
+                }
             }
 
             // Dungeons & Dragons PTB Review
@@ -71,7 +66,7 @@ object MainPage : Page() {
     }
 
     fun DIV.videos(idA: String, idB: String, desc: String) {
-        div("stack") {
+        stack(Justify.CENTER) {
             iframe {
                 width = "480"
                 height = "270"
@@ -118,7 +113,8 @@ object MainPage : Page() {
                 }
                 
                 .contact {
-                    display: flex;
+                    align-content: center;
+                    padding: 10px;
                 }
                 
                 .split.footer {
@@ -147,12 +143,6 @@ object MainPage : Page() {
                     width: 100%;
                   }
                 }
-                
-                .stack {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                 }
                 
                 .video-desc {
                     margin-top: 10px;
@@ -195,6 +185,10 @@ object MainPage : Page() {
             
             #bio {
                 width: 70%;
+            }
+            
+            .split.content {
+                flex-direction: column;
             }
             
             .split.footer {

@@ -24,6 +24,11 @@ object CommonStyle : StyleSheet() {
                 display: flex;
             }
             
+            .stack {
+                display: flex;
+                flex-direction: column;
+             }
+            
             .grid {
               display: grid;
               gap: 1rem;

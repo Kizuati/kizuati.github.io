@@ -12,7 +12,7 @@ abstract class StyleSheet {
             val small = getSmall()
             if (small != null) {
                 append("\n\n")
-                append("@media screen and (max-width: 700px) {\n")
+                append("@media screen and (max-width: 900px) {\n")
                 append(small.lines().map { "\t$it" }.joinToString(prefix = "", postfix = "", separator = "\n"))
                 append("\n}")
             }

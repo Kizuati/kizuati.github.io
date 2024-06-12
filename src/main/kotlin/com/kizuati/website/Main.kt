@@ -1,6 +1,7 @@
 package com.kizuati.website
 
 import com.kizuati.website.components.metaProperty
+import com.kizuati.website.pages.InfoPage
 import com.kizuati.website.pages.MainPage
 import com.kizuati.website.pages.SocialPage
 import com.kizuati.website.style.CommonStyle
@@ -20,12 +21,14 @@ fun main(args: Array<String>) {
         CommonStyle,
         MainPage.Style,
         SocialPage.Style,
+        InfoPage.Style
     )
 
     val pages = arrayOf(
         // Main Pages
         MainPage,
         SocialPage,
+        InfoPage,
     )
 
     val resources = mapOf(
