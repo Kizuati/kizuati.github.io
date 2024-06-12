@@ -36,6 +36,8 @@ fun main(args: Array<String>) {
         "meta/favicon.ico" to "favicon.ico",
         "meta/site_image.png" to "site_image.png",
         "images/pfp.png" to "images/pfp.png",
+        "images/AYOK.webp" to "images/AYOK.webp",
+        "images/E2.webp" to "images/E2.webp",
         "redirects/discord.html" to "discord.html",
         "redirects/bsky.html" to "bsky.html",
         "redirects/twitch.html" to "twitch.html",

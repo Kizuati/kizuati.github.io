@@ -14,8 +14,8 @@ object InfoPage : Page() {
 
     override fun BODY.body() {
         split(Justify.CENTER) {
-            img("Kizu's profile picture", "images/pfp.png") {
-                id = "profile_picture"
+            img("Image of a hooked survivor edited to be red, with a white question mark over it", "images/AYOK.webp") {
+                id = "icon"
                 width = 400.px
                 height = 400.px
             }
@@ -32,8 +32,8 @@ object InfoPage : Page() {
         }
 
         split(Justify.CENTER, "content") {
-            img("Example", "images/pfp.png") {
-                id = "example"
+            img("Image of a running survivor edited to be red, with white text saying \"yes, no, maybe\" over it.", "images/E2.webp") {
+                id = "ynm"
                 width = 200.px
                 height = 200.px
             }
