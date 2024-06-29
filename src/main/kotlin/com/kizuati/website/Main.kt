@@ -39,7 +39,6 @@ fun main(args: Array<String>) {
         "images/AYOK.webp" to "images/AYOK.webp",
         "images/E2.webp" to "images/E2.webp",
         "redirects/discord.html" to "discord.html",
-        "redirects/bsky.html" to "bsky.html",
         "redirects/twitch.html" to "twitch.html",
         "redirects/twitter.html" to "twitter.html",
         "redirects/youtube.html" to "youtube.html"
