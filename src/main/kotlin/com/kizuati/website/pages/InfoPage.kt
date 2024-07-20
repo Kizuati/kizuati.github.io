@@ -72,7 +72,7 @@ object InfoPage : Page() {
                         br
                         +"If you have a style of video you'd like to copy,link that directly!"
                         br2
-                        +"I will provide you with rough drafts as I continously assemble the video that we'll go over together while in voice chat. This is the stage you can give feedback on the project."
+                        +"I will provide you with rough drafts as I continuously assemble the video that we'll go over together while in voice chat. This is the stage you can give feedback on the project."
                         br2
                         +"After a few drafts I'll give you a 480P version of your final video. Afterwards you'll provide full payment and I'll give you a link to the full video download at a high resolution/bitrate."
                     }
