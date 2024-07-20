@@ -24,7 +24,7 @@ object InfoPage : Page() {
                 article {
                     h1 { +"All You Oughta Know" }
                     h2 { +"You can find my pricing & all the other important comm deets here." }
-                    +"I go for about 8\$ per hour of work on a video,so for example,me working for 6 hours on a video of yours will cost you a nice 48\$. "
+                    +"I go for about \$8 per hour of work on a video,so for example,me working for 6 hours on a video of yours will cost you a nice \$48. "
                     br2
                     +"If you want something especially fancy,my per hour rate can go up to \$10-12 and you will be notified of that depending on the material,etc."
                 }
