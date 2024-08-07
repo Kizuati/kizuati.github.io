@@ -67,9 +67,9 @@ object MainPage : Page() {
                 }
             }
 
-            // Dungeons & Dragons PTB Review
-            // Tomb Raider PTB Review
-            div { videos("Ivon9mr6XNE", "CDmNF_Mchvw", "There's also a lot of game design focused deep dive videos made by me on DBD that have pretty graphics to accompany my points.") }
+            // D&D PTB Deep Dive
+            // Castlevania PTB Deep Dive
+            div { videos("Ivon9mr6XNE", "lsEK0gzTCxc", "There's also a lot of game design focused deep dive videos made by me on DBD that have pretty graphics to accompany my points.") }
         }
     }
 
