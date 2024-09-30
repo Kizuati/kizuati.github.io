@@ -59,10 +59,11 @@ object MainPage : Page() {
             script { unsafe { +"""
                 let vC = document.getElementById("videos");
                 let videos = {
-                    "VhLVh5mauu4": "Quam at odio iusto omnis animi fugit. Tempore qui sapiente nulla animi. Et aperiam et eveniet repellat unde ea.",
-                    "yyc-o4DJHic": "Quam at odio iusto omnis animi fugit. Tempore qui sapiente nulla animi. Et aperiam et eveniet repellat unde ea.",
-                    "Ivon9mr6XNE": "Quam at odio iusto omnis animi fugit. Tempore qui sapiente nulla animi. Et aperiam et eveniet repellat unde ea.",
-                    "lsEK0gzTCxc": "Quam at odio iusto omnis animi fugit. Tempore qui sapiente nulla animi. Et aperiam et eveniet repellat unde ea."
+                    "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air.",
+                    "VhLVh5mauu4": "Long-form stream highlights content from around 24 hours of VODs put together into a punchy package.",
+                    "lsEK0gzTCxc": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content.",
+                    "tjbuAB4dHss": "Random spur of the moment quick & dirty edit with lots of sillies and memes thrown around.",
+					"CDmNF_Mchvw": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content."
                 }
                 let put = [];
                 var randomID = function (obj) {
@@ -113,9 +114,9 @@ object MainPage : Page() {
         }
 
         article("content") {
-            +" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, erat ut accumsan aliquet, eros elit viverra leo, in scelerisque mauris quam tristique diam. Etiam sollicitudin dolor sed ex feugiat pharetra. Quisque id ligula ut erat iaculis suscipit. Mauris vitae tincidunt eros. Curabitur maximus tincidunt elit, nec consectetur elit faucibus vel. Sed venenatis lacinia venenatis. Suspendisse volutpat gravida enim eu suscipit. Aliquam erat volutpat. Aliquam porttitor diam eget varius iaculis. Morbi ac ligula vel elit imperdiet mattis at eu justo. Praesent nec odio enim."
+            +"These videos are a random selection with short descriptions of work I've done in the past. If any of it catches your fancy,the commissions info button is in the top right ;)"
             br2
-            +"Etiam ullamcorper felis nec sem dignissim, eleifend maximus tortor pellentesque. Morbi eros leo, ultricies et eleifend sed, mollis vitae libero. Sed vehicula mauris vel leo sagittis, vel tincidunt libero suscipit. Nulla dignissim odio lobortis velit maximus pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sollicitudin pulvinar tincidunt. Morbi non vulputate urna. Nulla quis justo nulla. Mauris lobortis elementum sem, id vestibulum nisl placerat ac. "
+            +"Keep in mind, just because your style isn't represented here it doesn't meant I won't/can't do it! Feel free to reach out and ask me if your project makes sense! "
         }
     }
 
