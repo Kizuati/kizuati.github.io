@@ -10,6 +10,14 @@ object InfoPage : Page() {
     override val path = "info"
 
     override fun BODY.body() {
+        h1 {
+            split(null) {
+                backButton()
+                verticalDivider()
+                +"Commission Info"
+            }
+        }
+
         split(Justify.CENTER) {
             img("Image of a hooked survivor edited to be red, with a white question mark over it", "images/AYOK.webp") {
                 id = "icon"
@@ -21,9 +29,9 @@ object InfoPage : Page() {
                 article {
                     h1 { +"All You Oughta Know" }
                     h2 { +"You can find my pricing & all the other important comm deets here." }
-                    +"I go for about \$8 per hour of work on a video,so for example,me working for 6 hours on a video of yours will cost you a nice \$48. "
+                    +"I go for about 8\$ per hour of work on a video,so for example,me working for 6 hours on a video of yours will cost you a nice 48\$. "
                     br2
-                    +"If you want something especially fancy,my per hour rate can go up to \$10-12 and you will be notified of that depending on the material,etc."
+                    +"If you want something especially fancy,my per hour rate can go up to 10-12\$ and you will be notified of that depending on the material,etc."
                 }
             }
         }
@@ -47,7 +55,7 @@ object InfoPage : Page() {
                         h2 { +"Things I wont do" }
                         +"Complicated After Effects/3D things. Especially intricate edits like manually keying out objects."
                         br
-                        +"Basically any VFX heavy work. I also don't do thumbnails."
+                        +"Basically any VFX heavy work. I also don't do thumnbnails."
                     }
                     div {
                         h2 { +"Things I Could Do If You Pay Me A Bunch" }
@@ -59,7 +67,7 @@ object InfoPage : Page() {
                 stack(Justify.SPACE_BETWEEN) {
                     div {
                         h2 { +"Payment Details" }
-                        +"You pay a \$12 deposit upfront. This is an anti-scam measure. It's delivered via my Ko-Fi."
+                        +"You pay a 12\$ deposit upfront. This is an anti-scam measure. It's delivered via my Ko-Fi."
                     }
                     div {
                         h2 { +"Commission Process" }
@@ -69,7 +77,7 @@ object InfoPage : Page() {
                         br
                         +"If you have a style of video you'd like to copy,link that directly!"
                         br2
-                        +"I will provide you with rough drafts as I continuously assemble the video that we'll go over together while in voice chat. This is the stage you can give feedback on the project."
+                        +"I will provide you with rough drafts as I continously assemble the video that we'll go over together while in voice chat. This is the stage you can give feedback on the project."
                         br2
                         +"After a few drafts I'll give you a 480P version of your final video. Afterwards you'll provide full payment and I'll give you a link to the full video download at a high resolution/bitrate."
                     }
@@ -101,6 +109,19 @@ object InfoPage : Page() {
                 
                 article {
                     align-self: center;
+                }
+                
+                button {
+                    border: none;
+                    border-radius: 10px;
+                    padding: 5px;
+                    text-align: center;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    width: 6em;
+                    background-color: #2f2f33;
+                    color: #FFFFFF;
                 }
             """.trimIndent()
         }
