@@ -40,6 +40,12 @@ object CommonStyle : StyleSheet() {
                 align-items: center;
                 justify-content: center;
             }
+            
+            .vertical_divider {
+                border: solid #2f2f33;
+                border-width: 2px;
+                margin: 0 10px 0 10px;
+            }
         """.trimIndent()
     }
 

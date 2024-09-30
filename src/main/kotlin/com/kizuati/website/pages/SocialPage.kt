@@ -3,14 +3,22 @@ package com.kizuati.website.pages
 import com.kizuati.website.Page
 import com.kizuati.website.StyleSheet
 import com.kizuati.website.components.Justify
+import com.kizuati.website.components.backButton
 import com.kizuati.website.components.split
+import com.kizuati.website.components.verticalDivider
 import kotlinx.html.*
 
 object SocialPage : Page() {
     override val path = "social"
 
     override fun BODY.body() {
-        h1 { +"Socials" }
+        h1 {
+            split(null) {
+                backButton()
+                verticalDivider()
+                +"Socials"
+            }
+        }
         h2 { +"All of these are real,official socials by me. If it's not here it's probably a cake/lie." }
 		h2 { +"If you're looking to contact me,I recommend you to email me instead at commissions@kizuati.com" }
         split(Justify.SPACE_AROUND, "links") {

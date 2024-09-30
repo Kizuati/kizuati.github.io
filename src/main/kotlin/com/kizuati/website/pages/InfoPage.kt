@@ -2,10 +2,7 @@ package com.kizuati.website.pages
 
 import com.kizuati.website.Page
 import com.kizuati.website.StyleSheet
-import com.kizuati.website.components.Justify
-import com.kizuati.website.components.br2
-import com.kizuati.website.components.split
-import com.kizuati.website.components.stack
+import com.kizuati.website.components.*
 import com.kizuati.website.util.px
 import kotlinx.html.*
 
