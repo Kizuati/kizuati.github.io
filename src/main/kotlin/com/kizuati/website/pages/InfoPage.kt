@@ -47,7 +47,7 @@ object InfoPage : Page() {
                 stack(Justify.SPACE_EVENLY, "buffer") {
                     div {
                         h2 { +"Things I will do" }
-                        +"Add music,sound effects,motion,cut up your 12 hour VOD into something watchable."
+                        +"Add music,sound effects,motion,cut up your 10 hour VOD into something watchable."
                         br
                         +"Add in a few jokes of my own responding or making fun of you if you want them in/that's your jam."
                     }
@@ -55,19 +55,19 @@ object InfoPage : Page() {
                         h2 { +"Things I wont do" }
                         +"Complicated After Effects/3D things. Especially intricate edits like manually keying out objects."
                         br
-                        +"Basically any VFX heavy work. I also don't do thumnbnails."
+                        +"Basically any VFX heavy work. I also don't really do thumnbnails."
                     }
                     div {
                         h2 { +"Things I Could Do If You Pay Me A Bunch" }
                         +"Really painstaking music sync up for a lot of your clips. Graphics to explain your points with relevant information."
                         br
-                        +"Basic thumbnails like my own if you really need them. Extra pay required."
+                        +"Basic thumbnails like my own if you *really* need them. Extra pay required."
                     }
                 }
                 stack(Justify.SPACE_BETWEEN) {
                     div {
                         h2 { +"Payment Details" }
-                        +"You pay a 12\$ deposit upfront. This is an anti-scam measure. It's delivered via my Ko-Fi."
+                        +"You pay a 20\$ deposit upfront. This is an anti-scam measure,sorry."
                     }
                     div {
                         h2 { +"Commission Process" }
