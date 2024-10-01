@@ -59,11 +59,13 @@ object MainPage : Page() {
             script { unsafe { +"""
                 let vC = document.getElementById("videos");
                 let videos = {
-                    "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air.",
-                    "VhLVh5mauu4": "Long-form stream highlights content from around 24 hours of VODs put together into a punchy package.",
-                    "lsEK0gzTCxc": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content.",
-                    "tjbuAB4dHss": "Random spur of the moment quick & dirty edit with lots of sillies and memes thrown around.",
-					"CDmNF_Mchvw": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content."
+                    "Deep Dive": { 
+                        "lsEK0gzTCxc": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content.",
+                        "CDmNF_Mchvw": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content."
+                    },
+                    "Podcast/Misc": { "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air." },
+                    "Montage": { "tjbuAB4dHss": "Random spur of the moment quick & dirty edit with lots of sillies and memes thrown around." },
+					"Highlights": { "VhLVh5mauu4": "Long-form stream highlights content from around 24 hours of VODs put together into a punchy package." }
                 }
                 let put = [];
                 var randomID = function (obj) {
@@ -102,9 +104,9 @@ object MainPage : Page() {
                 let insertRandom = function() {
                     var rK = randomID(videos);
                     while (put.includes(rK)) { rK = randomID(videos); };
-                    console.log(rK);
                     put.push(rK);
-                    insertVideo(rK, videos[rK])
+                    var rV = randomID(videos[rK]);
+                    insertVideo(rV, videos[rK][rV]);
                 }
                 insertRandom();
                 insertRandom();
@@ -117,27 +119,6 @@ object MainPage : Page() {
             +"These videos are a random selection with short descriptions of work I've done in the past. If any of it catches your fancy,the commissions info button is in the top right ;)"
             br2
             +"Keep in mind, just because your style isn't represented here it doesn't meant I won't/can't do it! Feel free to reach out and ask me if your project makes sense! "
-        }
-    }
-
-    private fun DIV.video(id: String, desc: String) {
-        stack(Justify.CENTER, "video-stack") {
-            div("video-container") {
-                iframe {
-                    width = "384"
-                    height = "216"
-                    title = "YouTube video player"
-                    src = "https://www.youtube-nocookie.com/embed/${id}"
-                    attributes["frameborder"] = "0"
-                    attributes["allow"] = "clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    attributes["allowfullscreen"] = "1"
-                    attributes["class"] = "embed"
-                }
-            }
-
-            div("video-desc") {
-                +desc
-            }
         }
     }
 
