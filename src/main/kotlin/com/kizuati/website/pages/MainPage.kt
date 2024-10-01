@@ -117,9 +117,14 @@ object MainPage : Page() {
 
         split(Justify.CENTER) {
             article("content") {
-                +"These videos are a random selection with short descriptions of work I've done in the past. If any of it catches your fancy,the commissions info button is in the top right ;)"
-                br2
-                +"Keep in mind, just because your style isn't represented here it doesn't meant I won't/can't do it! Feel free to reach out and ask me if your project makes sense! "
+                p {
+                    style = "text-align:center;"
+                    +"These videos are a random selection with short descriptions of work I've done in the past. If any of it catches your fancy,the commissions info button is in the top right ;)"
+                }
+                p {
+                    style = "text-align:center;"
+                    +"Keep in mind, just because your style isn't represented here it doesn't meant I won't/can't do it! Feel free to reach out and ask me if your project makes sense! "
+                }
             }
         }
     }
