@@ -19,8 +19,8 @@ object SocialPage : Page() {
                 +"Socials"
             }
         }
-        h1 { +"All of these are real,official socials by me. If it's not here it's probably a cake/lie." }
-		h1 { +"If you're looking to commission me,I recommend you to email me instead." }
+        h3 { +"All of these are real,official socials by me. If it's not here it's probably a cake/lie." }
+		h3 { +"If you're looking to commission me,I recommend you to email me instead." }
         split(Justify.SPACE_AROUND, "links") {
             ul {
                 entry(
