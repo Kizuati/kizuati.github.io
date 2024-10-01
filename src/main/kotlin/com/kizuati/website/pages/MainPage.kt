@@ -63,9 +63,16 @@ object MainPage : Page() {
                         "lsEK0gzTCxc": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content.",
                         "CDmNF_Mchvw": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content."
                     },
-                    "Podcast/Misc": { "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air." },
-                    "Montage": { "tjbuAB4dHss": "Random spur of the moment quick & dirty edit with lots of sillies and memes thrown around." },
-					"Highlights": { "VhLVh5mauu4": "Long-form stream highlights content from around 24 hours of VODs put together into a punchy package." }
+                    "Podcast/Misc": { 
+                        "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air."
+                    },
+                    "Montage": { 
+                        "tjbuAB4dHss": "Random spur of the moment quick & dirty edit with lots of sillies and memes thrown around."
+                    },
+					"Highlights": { 
+                        "VhLVh5mauu4": "Long-form stream highlights content from around 24 hours of VODs put together into a punchy package.",
+                        "yyc-o4DJHic": "Stream highlights content from around 6 hours of VODs put together into a silly lil' package."
+                    }
                 }
                 let put = [];
                 var randomID = function (obj) {
