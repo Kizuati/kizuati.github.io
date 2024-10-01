@@ -88,7 +88,16 @@ object InfoPage : Page() {
             }
         }
 
-        split(Justify.CENTER) { h1 { +"PLEASE CONTACT ME ONLY VIA EMAIL, NOT TWITTER,DISCORD,ETC." } }
+        split(Justify.CENTER) {
+             stack(Justify.SPACE_EVENLY) {
+                 h1 { +"PLEASE CONTACT ME ONLY VIA EMAIL, NOT TWITTER,DISCORD,ETC." }
+                 div {
+                     id = "comm-email"
+                     style = "text-align:center; font-size: 20px"
+                     email("commissions@kizuati.com")
+                 }
+             }
+        }
     }
 
     override fun additionalStyleSheets(): List<StyleSheet> {
