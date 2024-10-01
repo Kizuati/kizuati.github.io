@@ -88,7 +88,7 @@ object InfoPage : Page() {
             }
         }
 
-        split(Justify.CENTER) { h1 { +"Lorum Ipsum" } }
+        split(Justify.CENTER) { h1 { +"PLEASE CONTACT ME ONLY VIA EMAIL, NOT TWITTER,DISCORD,ETC." } }
     }
 
     override fun additionalStyleSheets(): List<StyleSheet> {
