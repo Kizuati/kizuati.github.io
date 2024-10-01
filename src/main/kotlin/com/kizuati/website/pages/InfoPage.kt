@@ -37,7 +37,10 @@ object InfoPage : Page() {
         }
 
         split(Justify.CENTER, "content") {
-            img("Image of a running survivor edited to be red, with white text saying \"yes, no, maybe\" over it.", "images/E2.webp") {
+            img(
+                "Image of a running survivor edited to be red, with white text saying \"yes, no, maybe\" over it.",
+                "images/E2.webp"
+            ) {
                 id = "ynm"
                 width = 200.px
                 height = 200.px
@@ -83,6 +86,17 @@ object InfoPage : Page() {
                     }
                 }
             }
+        }
+
+        split(Justify.CENTER) {
+             stack(Justify.SPACE_EVENLY) {
+                 h1 { +"PLEASE CONTACT ME ONLY VIA EMAIL, NOT TWITTER,DISCORD,ETC." }
+                 div {
+                     id = "comm-email"
+                     style = "text-align:center; font-size: 20px"
+                     email("commissions@kizuati.com")
+                 }
+             }
         }
     }
 
