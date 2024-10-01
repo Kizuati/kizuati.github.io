@@ -19,8 +19,8 @@ object SocialPage : Page() {
                 +"Socials"
             }
         }
-        h2 { +"All of these are real,official socials by me. If it's not here it's probably a cake/lie." }
-		h2 { +"If you're looking to contact me,I recommend you to email me instead at commissions@kizuati.com" }
+        h1 { +"All of these are real,official socials by me. If it's not here it's probably a cake/lie." }
+		h1 { +"If you're looking to commission me,I recommend you to email me instead." }
         split(Justify.SPACE_AROUND, "links") {
             ul {
                 entry(
