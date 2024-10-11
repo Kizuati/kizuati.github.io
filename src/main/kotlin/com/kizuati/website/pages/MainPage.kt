@@ -67,7 +67,8 @@ object MainPage : Page() {
                         "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air."
                     },
                     "Montage": { 
-                        "tjbuAB4dHss": "Random spur of the moment quick & dirty edit with lots of sillies and memes thrown around."
+                        "tjbuAB4dHss": "Random spur of the moment quick & dirty edit with lots of sillies and memes thrown around.",
+						"DNnV2Lh8vRM": "Highlights reel of weird and chaotic happenstances with memes and jokes thrown in."
                     },
 					"Highlights": { 
                         "VhLVh5mauu4": "Long-form stream highlights content from around 24 hours of VODs put together into a punchy package.",
