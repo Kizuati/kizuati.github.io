@@ -21,7 +21,6 @@ object MainPage : Page() {
                     id = "profile_picture"
                     width = 400.px
                     height = 400.px
-                    style = "align-self: flex-start;"
                 }
                 div {
                     id = "bio"
@@ -208,6 +207,8 @@ object MainPage : Page() {
                 }
                 
                 #profile_picture {
+                    align-self: flex-start;
+                
                     margin: 10px 30px 10px 10px;
 
                     max-width: 100%;
@@ -272,6 +273,10 @@ object MainPage : Page() {
             #bio {
                 width: 70%;
             }
+            
+            .combo {
+                width: 75%;
+            }
         """.trimIndent()
 
         override fun getMobile() = """
@@ -282,6 +287,22 @@ object MainPage : Page() {
             #footer-name {
                 margin-right: 0px;
                 margin-bottom: 20px;
+            }
+            
+            .combo {
+                width: 90%;
+            }
+            
+            #profile_picture {
+                align-self: center;
+            }
+            
+            .contact {
+                padding-top: 30px;
+            }
+            
+            .video-stack {
+              width: 90%;
             }
         """.trimIndent()
     }
