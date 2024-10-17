@@ -43,7 +43,7 @@ fun main(args: Array<String>) {
         "redirects/twitter.html" to "twitter.html",
         "redirects/youtube_dbd.html" to "youtube_dbd.html",
         "redirects/youtube_variety.html" to "youtube_variety.html",
-        "redirects/bksy.html" to "bsky.html",
+        "redirects/bsky.html" to "bsky.html",
     )
 
     val root = Path("web_output/").absolute()
