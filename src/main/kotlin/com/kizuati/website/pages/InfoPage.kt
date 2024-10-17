@@ -88,7 +88,7 @@ object InfoPage : Page() {
             }
         }
 
-        split(Justify.CENTER) {
+        split(Justify.CENTER, "notice") {
              stack(Justify.SPACE_EVENLY) {
                  h1 { +"PLEASE CONTACT ME ONLY VIA EMAIL, NOT TWITTER,DISCORD,ETC." }
                  div {
@@ -136,6 +136,22 @@ object InfoPage : Page() {
                     width: 6em;
                     background-color: #2f2f33;
                     color: #FFFFFF;
+                }
+            """.trimIndent()
+        }
+
+        override fun getMobile(): String {
+            return """
+                .content {
+                  padding: 5px 5px 20px 5px;
+                }
+                
+                .notice {
+                    padding-bottom: 70px;
+                }
+                
+                .backbutton {
+                    display: none;
                 }
             """.trimIndent()
         }
