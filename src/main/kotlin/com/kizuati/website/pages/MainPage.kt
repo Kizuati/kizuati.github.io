@@ -63,7 +63,8 @@ object MainPage : Page() {
                         "CDmNF_Mchvw": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content."
                     },
                     "Podcast/Misc": { 
-                        "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air."
+                        "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air.",
+						"6Fi4Buy86Ow": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air."
                     },
                     "Montage": { 
                         "tjbuAB4dHss": "Random spur of the moment quick & dirty edit with lots of sillies and memes thrown around.",
