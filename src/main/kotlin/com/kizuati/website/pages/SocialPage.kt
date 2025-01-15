@@ -216,6 +216,10 @@ object SocialPage : Page() {
                 li {
                     padding-top: 12px;
                 }
+                
+                .widget {
+                    margin-bottom: 22px;
+                }
             """.trimIndent()
         }
     }
