@@ -40,6 +40,10 @@ async function constructEmbed() {
 			.replaceAll(/(?<!@|\.)(?:https?:\/\/)?(\b[a-zA-Z0-9\\]+\.[a-zA-Z0-9\.\\/]+)\b/mg, "<a href=\"https://$1\">$1</a>") // links
 			.replaceAll(/@([a-zA-Z0-9\.\\]+)/gm, "<a href=\"https://bsky.app/profile/$1\">@$1</a>"); // mentions
 
+		if (p.embed !== undefined) {
+			cC[0].innerHTML = cC[0].innerHTML + "<p style=\"color: gray\">[image 🗗\uFE0E]</p>"
+		}
+
 		embedBody.appendChild(clone);
 	}
 }
