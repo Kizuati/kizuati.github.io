@@ -38,13 +38,18 @@ fun main(args: Array<String>) {
         "images/pfp.png" to "images/pfp.png",
         "images/AYOK.webp" to "images/AYOK.webp",
         "images/E2.webp" to "images/E2.webp",
+        "images/yt_dbd_pfp.webp" to "images/yt_dbd_pfp.webp",
+        "images/yt_variety_pfp.webp" to "images/yt_variety_pfp.webp",
+        "images/yt_dbd_banner.webp" to "images/yt_dbd_banner.webp",
+        "images/yt_variety_banner.webp" to "images/yt_variety_banner.webp",
         "redirects/discord.html" to "discord.html",
         "redirects/twitch.html" to "twitch.html",
         "redirects/twitter.html" to "twitter.html",
         "redirects/youtube_dbd.html" to "youtube_dbd.html",
         "redirects/youtube_variety.html" to "youtube_variety.html",
         "redirects/bsky.html" to "bsky.html",
-        "scripts/bsky-embed.js" to "scripts/bsky-embed.js"
+        "scripts/bsky-embed.js" to "scripts/bsky-embed.js",
+        "scripts/yt-embed.js" to "scripts/yt-embed.js"
     )
 
     val root = Path("web_output/").absolute()

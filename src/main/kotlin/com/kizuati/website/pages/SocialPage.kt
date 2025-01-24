@@ -10,6 +10,7 @@ object SocialPage : Page() {
 
     override fun HEAD.head() {
         script("module", "/scripts/bsky-embed.js") {}
+        script("module", "/scripts/yt-embed.js") {}
     }
 
     override fun BODY.postBody() {
@@ -36,24 +37,6 @@ object SocialPage : Page() {
         }
         h3 { +"All of these are real,official socials by me. If it's not here it's probably a cake/lie." }
 		h3 { +"If you're looking to commission me,I recommend you to email me instead." }
-        split(Justify.SPACE_AROUND, "links") {
-            ul {
-                entry(
-                    "DBD Channel",
-                    "https://s.kizuati.com/youtubedbd",
-                    "#FF0000",
-                    "M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
-                )
-            }
-            ul {
-                entry(
-                    "Variety Channel",
-                    "https://s.kizuati.com/youtubevariety",
-                    "#FF0000",
-                    "M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
-                )
-            }
-        }
         split(Justify.SPACE_EVENLY) {
             iframe {
                 classes = setOf("widget")
@@ -82,14 +65,14 @@ object SocialPage : Page() {
                         }
                     }
                     stack(Justify.LEFT) {
-                        a(href = "https://bsky.app/profile/kizuati.com", target = "_blank") {
+                        a(href = "https://s.kizuati.com/bsky", target = "_blank") {
                             style="text-decoration:none; color: inherit"
                             p {
                                 id = "bsky-displayname"
                                 style = "margin-top: 4px; margin-bottom: 0px"
                             }
                         }
-                        a(href = "https://bsky.app/profile/kizuati.com", target = "_blank") {
+                        a(href = "https://s.kizuati.com/bsky", target = "_blank") {
                             style="text-decoration:none; color: inherit"
                             p {
                                 id = "bsky-handle"
@@ -104,6 +87,84 @@ object SocialPage : Page() {
                 }
                 div {
                     id = "bsky-posts"
+                    style = "overflow-y: auto; height: auto;"
+                }
+            }
+            stack(Justify.LEFT, "widget") {
+                id = "youtube-variety"
+                img(src = "images/yt_variety_banner.webp") {
+                    id = "yt-variety-banner"
+                    width = "350"
+                    style = "border-top-left-radius: 5px; border-top-right-radius: 5px;"
+                }
+                split(Justify.LEFT) {
+                    div {
+                        style = "width: 100px; height: 40px"
+                        img(src = "images/yt_variety_pfp.webp") {
+                            id = "yt-dbd-pfp"
+                            width = "70"
+                            height = "70"
+                            style =
+                                "border: 1.5px solid #161e27; border-radius: 50%; position: relative; left: 10px; bottom: 35px;"
+                        }
+                    }
+                    stack(Justify.LEFT) {
+                        a(href = "https://s.kizuati.com/youtubevariety", target = "_blank") {
+                            style="text-decoration:none; color: inherit"
+                            p {
+                                id = "yt-variety-displayname"
+                                style = "margin-top: 4px; margin-bottom: 0px"
+                                +"Kizu"
+                            }
+                        }
+                    }
+                }
+                p {
+                    id = "yt-variety-desc"
+                    style = "margin-left: 15px; margin-top: 5px; font-size: 15px;"
+                    +"Hi I'm Kizu! I'm chaos incarnate with a strong hit of queerness that plays, streams and edits videogame sillies."
+                }
+                div {
+                    id = "yt-variety-posts"
+                    style = "overflow-y: auto; height: auto;"
+                }
+            }
+            stack(Justify.LEFT, "widget") {
+                id = "youtube-dbd"
+                img(src = "images/yt_dbd_banner.webp") {
+                    id = "yt-dbd-banner"
+                    width = "350"
+                    style = "border-top-left-radius: 5px; border-top-right-radius: 5px;"
+                }
+                split(Justify.LEFT) {
+                    div {
+                        style = "width: 100px; height: 40px"
+                        img(src = "images/yt_dbd_pfp.webp") {
+                            id = "yt-dbd-pfp"
+                            width = "70"
+                            height = "70"
+                            style =
+                                "border: 1.5px solid #161e27; border-radius: 50%; position: relative; left: 10px; bottom: 35px;"
+                        }
+                    }
+                    stack(Justify.LEFT) {
+                        a(href = "https://s.kizuati.com/youtubedbd", target = "_blank") {
+                            style="text-decoration:none; color: inherit"
+                            p {
+                                id = "yt-dbd-displayname"
+                                style = "margin-top: 4px; margin-bottom: 0px"
+                                +"MaybeKizu"
+                            }
+                        }
+                    }
+                }
+                p {
+                    id = "yt-dbd-desc"
+                    style = "margin-left: 15px; margin-top: 5px; font-size: 15px;"
+                    +"Hi I'm Kizu! I like to talk about game design."
+                }
+                div {
+                    id = "yt-dbd-posts"
                     style = "overflow-y: auto; height: auto;"
                 }
             }

@@ -27,7 +27,6 @@ async function constructEmbed() {
   	const template = document.querySelector("#bskypostt");
 
 	for (let p of posts) {
-		console.log(p);
 		const clone = template.content.cloneNode(true);
 		let cW = clone.querySelectorAll("a");
 		let cC = clone.querySelectorAll("p");
