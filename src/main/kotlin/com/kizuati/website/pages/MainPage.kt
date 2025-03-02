@@ -73,7 +73,7 @@ object MainPage : Page() {
 					"Highlights": { 
                         "VhLVh5mauu4": "Long-form stream highlights content from around 24 hours of VODs put together into a punchy package.",
                         "yyc-o4DJHic": "Stream highlights content from around 6 hours of VODs put together into a silly lil' package."
-                    }
+                    },
                     "Game Essay": {
                         "x8llwkwq6t4": "My foray into general game centric video essays that hits the usual level of quality that is expected of my channel."
                     }
