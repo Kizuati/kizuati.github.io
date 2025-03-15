@@ -59,8 +59,7 @@ object MainPage : Page() {
                 let vC = document.getElementById("videos");
                 let videos = {
                     "Deep Dive": { 
-                        "lsEK0gzTCxc": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content.",
-                        "CDmNF_Mchvw": "Scripted,highly detailed deep dive into DBD's PTBs with sections presenting & reviewing new & and changed content."
+                        "UoieCUMMVFQ": "High detail, high octane, high edits video essay examining PTBs released for DBD."
                     },
                     "Podcast/Misc": { 
                         "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air.",
