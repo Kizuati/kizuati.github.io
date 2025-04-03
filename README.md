@@ -1,1 +1,2 @@
-All the code behind making my portfolio site kizuati.com function with all the bells bonging and binging and the whistles whistling. More or less.
+This is the innards of my portfolio website - https://kizuati.com.
+If you're looking to hire me, you've stumbled into the wrong page. 
