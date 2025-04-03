@@ -74,7 +74,7 @@ object InfoPage : Page() {
                     }
                     div {
                         h2 { +"Commission Process" }
-                        +"I prefer locally recorded VODs/footage. If you're on Twitch/Youtube and don't have local recordings,provide me with Editor access to your channel on the respective platform."
+                        +"I prefer locally recorded VODs/footage. Please provide the highest quality source you can."
                         br2
                         +"Outline your expectations and give examples of something you want from your commission upfront."
                         br
@@ -82,7 +82,7 @@ object InfoPage : Page() {
                         br2
                         +"I will provide you with rough drafts as I continously assemble the video that we'll go over together while in voice chat. This is the stage you can give feedback on the project."
                         br2
-                        +"After a few drafts I'll give you a 480P version of your final video. Afterwards you'll provide full payment and I'll give you a link to the full video download at a high resolution/bitrate."
+                        +"After a few drafts I'll provide final video, via Proton Drive. It's expected you make payment at this stage, deducting the pre-order fee. If you'd like, you can skip this by paying in advance. It'll be credited and any excess money will be refunded."
                     }
                 }
             }
