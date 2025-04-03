@@ -7,7 +7,7 @@ import com.kizuati.website.util.px
 import kotlinx.html.*
 
 object MainPage : Page() {
-    override val title = "Kizu's Landing Page"
+    override val title = "Kizu's Properly Precious Portfolio"
     override val path = "index"
 
     override fun additionalStyleSheets(): List<StyleSheet> {
@@ -26,10 +26,12 @@ object MainPage : Page() {
                     id = "bio"
                     article {
                         h1 { +"Hi,I'm Kizu" }
-                        h2 { +"I edit videos and like to waffle about game design." }
-                        +"Those videos range from game design deep dives to stream highlights with anything in between."
+                        h2 { +"I'm a semi-experienced video editor & writer." }
+                        +"I've done a lot of things, including standardizing full blown video essays that get made within hours of new content dropping..."
+			+"...All the way to scrubbing through 24h of VOD footage to construct a highlights reel while sick to the core."
                         br2
-                        +"If you want your videos edited - hit me up,we'll work something out :)"
+                        +"Safe to say, I've got the skills and I don't value my own sanity."
+                        +"Want to have fun working with your video editor? Reach out now."
                     }
                 }
             }
@@ -59,20 +61,20 @@ object MainPage : Page() {
                 let vC = document.getElementById("videos");
                 let videos = {
                     "Deep Dive": { 
-                        "UoieCUMMVFQ": "High detail, high octane, high edits video essay examining PTBs released for DBD."
+                        "UoieCUMMVFQ": "Very in depth rapidly made video essay meets news piece content that covers DBD's PTBs."
                     },
                     "Podcast/Misc": { 
-                        "SXJsp8gh9fk": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air.",
+                        "SXJsp8gh9fk": "Simple-ish edit of a D&D session adding music and backgrounds,cutting around dead air.",
 						"6Fi4Buy86Ow": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air."
                     },
                     "Montage": { 
 						"DNnV2Lh8vRM": "Highlights reel of weird and chaotic happenstances with memes and jokes thrown in."
                     },
 					"Highlights": { 
-                        "VhLVh5mauu4": "Long-form stream highlights content from around 24 hours of VODs put together into a punchy package.",
+                        "VhLVh5mauu4": "Long-form highlights from around 24 hours of VODs put together into a punchy package.",
                     },
                     "Game Essay": {
-                        "x8llwkwq6t4": "My foray into general game centric video essays that hits the usual level of quality that is expected of my channel."
+                        "x8llwkwq6t4": "My foray into general game centric video essays. Still a WIP."
                     }
                 }
                 let put = [];
@@ -127,11 +129,11 @@ object MainPage : Page() {
             article("content") {
                 p {
                     style = "text-align:center;"
-                    +"These videos are a random selection with short descriptions of work I've done in the past. If any of it catches your fancy,the commissions info button is in the top right ;)"
+                    +"These videos are a random selection with short descriptions of work I've done in the past. Over time I'm evolving to bigger and bigger projects. "
                 }
                 p {
                     style = "text-align:center;"
-                    +"Keep in mind, just because your style isn't represented here it doesn't meant I won't/can't do it! Feel free to reach out and ask me if your project makes sense! "
+                    +"Keep in mind, if your style isn't here, it's perfectly valid to reach out anyhoo. I'll tell if I'm a good pick for your idea."
                 }
             }
         }
