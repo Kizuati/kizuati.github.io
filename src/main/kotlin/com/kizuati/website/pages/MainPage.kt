@@ -28,10 +28,12 @@ object MainPage : Page() {
                         h1 { +"Hi,I'm Kizu" }
                         h2 { +"I'm a semi-experienced video editor & writer." }
                         +"I've done a lot of things, including standardizing full blown video essays that get made within hours of new content dropping..."
-			+"...All the way to scrubbing through 24h of VOD footage to construct a highlights reel while sick to the core."
+			br2
+                        +"...All the way to scrubbing through 24h of VOD footage to construct a highlights reel while sick to the core."
                         br2
                         +"Safe to say, I've got the skills and I don't value my own sanity."
-                        +"Want to have fun working with your video editor? Reach out now."
+                        b2
+                        +"Want to have fun working with your video editor?" b {"Reach out now :)"}
                     }
                 }
             }
