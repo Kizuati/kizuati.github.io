@@ -131,7 +131,8 @@ object MainPage : Page() {
             article("content") {
                 p {
                     style = "text-align:center;"
-                    +"These videos are a random selection with short descriptions of work I've done in the past. /n Over time I'm evolving to bigger and bigger projects. "
+                    +"These videos are a random selection with short descriptions of work I've done in the past." 
+	            /n +"Over time I'm evolving to bigger and bigger projects. "
                 }
                 p {
                     style = "text-align:center;"
