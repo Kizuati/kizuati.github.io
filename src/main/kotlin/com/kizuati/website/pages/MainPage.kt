@@ -26,7 +26,7 @@ object MainPage : Page() {
                     id = "bio"
                     article {
                         h1 { +"Hi,I'm Kizu." }
-                        h2 { +"I'm a semi-professional video maker." ; i {+"That's to say, I edit and write things."} }
+                        h2 { +"I'm a semi-professional video maker." ; br ; i {+"That's to say, I edit and write things."} }
                         +"I've done a lot of things, including standardizing full blown video essays that get made within hours of new content dropping..."
 			br2
                         +"...All the way to scrubbing through 24h of VOD footage to construct a highlights reel while sick to the core."
