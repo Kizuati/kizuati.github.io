@@ -132,7 +132,6 @@ object MainPage : Page() {
                 p {
                     style = "text-align:center;"
                     +"These videos are a random selection with short descriptions of work I've done in the past."
-                    br1
                     +"Over time I'm evolving to bigger and bigger projects. "
                 }
                 p {
