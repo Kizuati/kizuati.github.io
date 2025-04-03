@@ -27,7 +27,6 @@ object MainPage : Page() {
                     article {
                         h1 { +"Hi,I'm Kizu." }
                         h2 { +"I'm a semi-professional video maker." }
-			br
 			h2 { i {+"That's to say, I edit and write things."}} 
                         +"I've done a lot of things, including standardizing full blown video essays that get made within hours of new content dropping..."
 			br2
