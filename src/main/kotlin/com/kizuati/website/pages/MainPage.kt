@@ -32,7 +32,7 @@ object MainPage : Page() {
                         +"...All the way to scrubbing through 24h of VOD footage to construct a highlights reel while sick to the core."
                         br2
                         +"Safe to say, I've got the skills and I don't value my own sanity." ;
-                        b +"Want to have fun working with your video editor?" b { +"Reach out now :)" }
+                        +"Want to have fun working with your video editor?"; b { +"Reach out now :)" }
                     }
                 }
             }
