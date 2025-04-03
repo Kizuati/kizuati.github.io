@@ -33,7 +33,7 @@ object MainPage : Page() {
                         br2
                         +"Safe to say, I've got the skills and I don't value my own sanity."
                         b2
-                        +"Want to have fun working with your video editor?" b {"Reach out now :)"}
+                        +"Want to have fun working with your video editor?" b { +"Reach out now :)" }
                     }
                 }
             }
