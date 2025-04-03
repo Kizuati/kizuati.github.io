@@ -66,12 +66,10 @@ object MainPage : Page() {
 						"6Fi4Buy86Ow": "Simpler-ish edit of a D&D session adding music and backgrounds,cutting around dead air."
                     },
                     "Montage": { 
-                        "tjbuAB4dHss": "Random spur of the moment quick & dirty edit with lots of sillies and memes thrown around.",
 						"DNnV2Lh8vRM": "Highlights reel of weird and chaotic happenstances with memes and jokes thrown in."
                     },
 					"Highlights": { 
                         "VhLVh5mauu4": "Long-form stream highlights content from around 24 hours of VODs put together into a punchy package.",
-                        "yyc-o4DJHic": "Stream highlights content from around 6 hours of VODs put together into a silly lil' package."
                     },
                     "Game Essay": {
                         "x8llwkwq6t4": "My foray into general game centric video essays that hits the usual level of quality that is expected of my channel."
