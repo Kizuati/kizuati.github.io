@@ -35,7 +35,7 @@ object SocialPage : Page() {
                 +"Socials"
             }
         }
-        h3 { +"All of these are real,official socials by me. If it's not here it's probably a cake/lie." }
+        h3 { +"These are the spaces I'm active in. Don't bother looking for me elsewhere." }
 		h3 { +"If you're looking to commission me,I recommend you to email me instead." }
         split(Justify.SPACE_EVENLY) {
             iframe {
