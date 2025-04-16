@@ -62,7 +62,7 @@ object MainPage : Page() {
                 let vC = document.getElementById("videos");
                 let videos = {
                     "Deep Dive": { 
-                        "UoieCUMMVFQ": "Very in depth rapidly made video essay meets news piece content that covers DBD's PTBs."
+                        "rbp6k1Qo6gQ": "Very in depth rapidly made video essay meets news piece content that covers DBD's PTBs."
                     },
                     "Podcast/Misc": { 
                         "SXJsp8gh9fk": "Simple-ish edit of a D&D session adding music and backgrounds,cutting around dead air.",
