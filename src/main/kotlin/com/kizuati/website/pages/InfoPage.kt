@@ -29,9 +29,9 @@ object InfoPage : Page() {
                 article {
                     h1 { +"All You Oughta Know" }
                     h2 { +"You can find my pricing & all the other important comm deets here." }
-                    +"I go for about 12\€ per hour of work on a video,so for example,me working for 6 hours on a video of yours will cost you a nice 60\€. "
+                    +"I go for about 12€ per hour of work on a video,so for example,me working for 6 hours on a video of yours will cost you a nice 60€. "
                     br2
-                    +"If you want something especially fancy,my per hour rate can go up to 18\€ and you will be notified of that depending on the material,etc."
+                    +"If you want something especially fancy,my per hour rate can go up to 18€ and you will be notified of that depending on the material,etc."
                 }
             }
         }
@@ -70,7 +70,7 @@ object InfoPage : Page() {
                 stack(Justify.SPACE_BETWEEN) {
                     div {
                         h2 { +"Payment Details" }
-                        +"You pay a 20\€ deposit upfront. This is a straightforward anti scam measure."
+                        +"You pay a 20€ deposit upfront. This is a straightforward anti scam measure."
                     }
                     div {
                         h2 { +"Commission Process" }
